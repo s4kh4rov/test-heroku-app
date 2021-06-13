@@ -13,7 +13,7 @@ public class RentController {
     public RentController() {
 
     }
-    @GetMapping("station/list")
+    @GetMapping("station/hello")
     public ResponseEntity<String> getRentStationsList() {
         return new ResponseEntity<>("Hello", HttpStatus.OK);
     }
