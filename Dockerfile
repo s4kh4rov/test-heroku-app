@@ -1,4 +1,4 @@
 FROM openjdk:8-jdk-alpine
-ARG JAR_FILE=target/*.jar
-COPY ${JAR_FILE} *.jar
+RUN mkdir -p /testapp
+ADD target/*.jar /testapp/app.jar
 CMD java -Dserver.port=$PORT $JAVA_OPTS -jar app.jar
