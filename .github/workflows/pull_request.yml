@@ -14,5 +14,5 @@ jobs:
       with:
         java-version: 1.8
     - name: Build with Maven
-      run: mvn -B package --file **/test-heroku-app/backend/pom.xml
+      run: mvn -B package --file test-heroku-app/backend/pom.xml
     
